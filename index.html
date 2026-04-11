@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoiceLM — Support</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 3rem 2.5rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    }
+    .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .subtitle {
+      color: #6e6e73;
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+    .section {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6e6e73;
+      margin-bottom: 0.75rem;
+    }
+    .section p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #3a3a3c;
+    }
+    .btn {
+      display: inline-block;
+      background: #0071e3;
+      color: #fff;
+      border: none;
+      border-radius: 980px;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #0077ed; }
+    .note {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: #aeaeb2;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🎙️</div>
+    <h1>VoiceLM Support</h1>
+    <p class="subtitle">Voice chat with your local AI</p>
+
+    <div class="section">
+      <h2>Before contacting</h2>
+      <p>
+        VoiceLM requires an LLM server (Ollama or LM Studio) running on your local network, or an Apple Intelligence supported device (iPhone 15 Pro / Pro Max or later, iOS 18.1+).<br><br>
+        For Built-in AI: make sure Siri language matches your iPhone's language in Settings → Apple Intelligence &amp; Siri.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Have a question or found a bug? Send us a message and we'll get back to you.</p>
+    </div>
+
+    <a class="btn" id="contact-btn" href="#">Contact Support</a>
+    <p class="note">Your message will be sent via email.</p>
+  </div>
+
+  <script>
+    // obfuscated email
+    const u = '400msdialogue';
+    const d = 'gmail.com';
+    const s = 'VoiceLM Support';
+    document.getElementById('contact-btn').href = 'mailto:' + u + '@' + d + '?subject=' + encodeURIComponent(s);
+  </script>
+</body>
+</html>
